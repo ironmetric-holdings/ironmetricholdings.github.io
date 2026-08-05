@@ -13,19 +13,79 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
             margin: 0;
+            padding: 40px 20px;
             text-align: center;
         }
-        h1 { font-size: 2rem; font-weight: normal; letter-spacing: 2px; margin-bottom: 10px; }
-        p { color: #737373; font-size: 1rem; max-width: 600px; line-height: 1.5; }
-        .status { margin-top: 40px; padding: 10px 20px; border: 1px solid #262626; color: #737373; font-size: 0.85rem; }
+        h1 { font-size: 2.2rem; font-weight: normal; letter-spacing: 3px; margin-bottom: 5px; }
+        h2 { font-size: 1rem; color: #A3A3A3; font-weight: normal; letter-spacing: 1px; margin-bottom: 30px; }
+        p { color: #737373; font-size: 0.95rem; max-width: 700px; line-height: 1.6; margin-bottom: 20px; }
+        
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            max-width: 800px;
+            margin: 40px 0;
+            text-align: left;
+        }
+        .pillar {
+            border: 1px solid #262626;
+            padding: 20px;
+            background-color: #111111;
+        }
+        .pillar h3 { color: #E5E5E5; font-size: 0.9rem; margin-top: 0; text-transform: uppercase; letter-spacing: 1px;}
+        .pillar p { color: #737373; font-size: 0.85rem; margin-bottom: 0; }
+        
+        .terminal-btn {
+            background-color: transparent;
+            color: #E5E5E5;
+            border: 1px solid #404040;
+            padding: 15px 30px;
+            font-family: inherit;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            text-decoration: none;
+            margin-top: 20px;
+            letter-spacing: 1px;
+        }
+        .terminal-btn:hover {
+            background-color: #E5E5E5;
+            color: #0A0A0A;
+        }
+        .status { margin-top: 60px; padding: 10px 20px; border: 1px solid #262626; color: #737373; font-size: 0.75rem; letter-spacing: 2px;}
     </style>
 </head>
 <body>
     <h1>IRONMETRIC HOLDINGS</h1>
-    <p>Industrial AI • Predictve Maintenance • Edge Infrastructure</p>
-    <p>Operating the Vantirion OS for Tier-1 SADC Metallurgical and Manufacturing deployments.</p>
-    <div class="status">SYSTEMS NOMINAL | B2B PORTAL RESTRICTED</div>
+    <h2>VANTIRION OS</h2>
+    
+    <p>Operating autonomous SCADA supervisory control and deterministic anomaly prevention for Tier-1 SADC Metallurgical and Manufacturing deployments.</p>
+
+    <div class="grid-container">
+        <div class="pillar">
+            <h3>Zero-Hallucination AI</h3>
+            <p>Utilizing Physics-Informed Neural Networks—mathematical surrogate twins. By isolating statistical machine learning from physical control loops, we guarantee zero un-commanded plant shutdowns.</p>
+        </div>
+        <div class="pillar">
+            <h3>Air-Gapped Sovereignty</h3>
+            <p>Absolute data sovereignty. Industrial telemetry never crosses the public internet. We utilize intercept protocols and hardware-level encryption to mathematically enforce zero exfiltration.</p>
+        </div>
+        <div class="pillar">
+            <h3>Unshackled Compute</h3>
+            <p>A Split-Tenant Kubernetes execution model. Heavy telemetry ingestion executes natively within your existing compute budget, eliminating CapEx infrastructure bloat.</p>
+        </div>
+        <div class="pillar">
+            <h3>Military-Grade Edge</h3>
+            <p>Built for the harshest manufacturing environments. Physical nodes are kinetically isolated to absorb 15G peak impacts and maintain integrity under extreme thermal conditions.</p>
+        </div>
+    </div>
+
+    <!-- The Frictionless Technical Pathway -->
+    <a href="/whitepaper.html" class="terminal-btn">> INITIALIZE TECHNICAL WHITEPAPER</a>
+
+    <div class="status">SYSTEMS NOMINAL | SADC REGION ACTIVE</div>
 </body>
 </html>
